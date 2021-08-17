@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="container">
+    <header class="header">
+        <h1>The Rock, The Paper, The Scissors</h1>
+        <button id="restart" class="restart-btn">Restart Game</button>
+        <div id="score" class="score">
+            <p>Player: 0</p>
+            <p>Computer: 0</p>
+        </div>
+    </header>
+
+    <h2>Select Your Choice of Dwayne</h2>
+
+<div class="result">
+    <p>Paper covers Rock. You win!</p>
+</div>
+
+</div>
+    <div class="choices">
+    <div class="choice" id="rock">
+        <img src="images/rock.png" alt="">
+    </div>
+    <div class="choice" id="paper">
+        <img src="images/paper.png" alt="">
+    </div>
+    <div class="choice" id="scissors">
+        <img src="images/scissors.png" alt="">
+    </div>
+</div>
+    
     <script src="app.js"></script>
 </body>
 </html>
