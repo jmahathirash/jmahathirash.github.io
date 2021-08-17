@@ -24,14 +24,12 @@ header > h1 {
 }
 
 h2 {
-    padding: 1rem 3rem;
-    margin-top: 3rem;
-    
+    padding: 1rem 4rem;
 }
 
 .score {
 border: solid black;
-padding: 5px ;
+padding: 6px ;
 display: grid;
 grid-template-columns:repeat(2, 1fr) ;
 font-size: large;
@@ -65,11 +63,14 @@ font-size: large;
 
 .choices {
     text-align: center;
-    margin: 45px
 }
 
 .choice {
     display: inline-block;
-    margin: 20px;
+    margin: 40px;
     border: 5px solid black
+}
+
+.result {
+    font-size: 20px;
 }
