@@ -61,7 +61,7 @@ function showWinner(win, compChoice) {
     }
 
     score.innerHTML = `
-        <p>Player ${scoreboard.player}</p>
+        <p>Player: ${scoreboard.player}</p>
         <p>Computer: ${scoreboard.computer}</p>
         `;
 }
