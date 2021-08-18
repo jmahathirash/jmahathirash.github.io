@@ -5,12 +5,12 @@
 
 body {
     background-color: #7d5fff;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 header {
     background: #7d5fff;
-    padding: 20px;
+    padding: 20px; 
 
 }
 
@@ -23,7 +23,7 @@ header > h1 {
 }
 
 h2 {
-    padding: 1rem 4rem;
+    padding:7px;
 }
 
 .score {
@@ -49,7 +49,7 @@ font-size: large;
     border: none;
     font-size: medium;
     color:black;
-    padding: 0.7rem 1.4rem;
+    padding: 0.7rem 1rem;
     margin: 10px;
 
 }
@@ -67,8 +67,8 @@ font-size: large;
 
 .choice {
     display: inline-block;
-    margin: 40px;
-    border: 5px solid black
+    margin: 64px;
+    border: 4px solid black
 }
 
 .choice:hover {
@@ -79,11 +79,11 @@ font-size: large;
     font-size: 22.5px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .flower {
-    text-align: center;
-    margin-top: 31px; 
+    text-align: center ;
+    margin-bottom: ;
 }
 
