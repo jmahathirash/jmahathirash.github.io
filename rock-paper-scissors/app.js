@@ -1,5 +1,5 @@
 const score = document.getElementById('score');
-const result = document.getElementById('result');
+const result = document.querySelector('.result > p');
 const restart = document.getElementById('restart');
 const rockDiv = document.getElementById("rock");
 const paperDiv = document.getElementById("paper");
@@ -56,8 +56,10 @@ function getWinner(p, c) {
 function showWinner(win, compChoice) {
     if(win === 'player') {
         scoreboard.player++;
+        result.innerHTML = `Computer chose ${compChoice}. You Win!`;
     } else if(win === 'computer') {
         scoreboard.computer++;
+        result.innerHTML = `Computer chose ${compChoice}. You Lose!`;
     }
 
     score.innerHTML = `
@@ -65,6 +67,7 @@ function showWinner(win, compChoice) {
         <p>Computer: ${scoreboard.computer}</p>
         `;
 }
+    
 
 function main() {
     paperDiv.addEventListener('click', function() {
