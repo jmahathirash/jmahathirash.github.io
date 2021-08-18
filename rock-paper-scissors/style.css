@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -38,8 +37,8 @@ font-size: large;
 .container {
     margin: auto;
     overflow: hidden;
-    max-width: 900px;
-    padding: 0 6rem;
+    max-width: 814.7px;
+    padding: 0;
     text-align: center;
 }
 
@@ -52,12 +51,14 @@ font-size: large;
     font-size: medium;
     color:black;
     padding: 0.7rem 1.4rem;
+    margin: 10px;
 
 }
 
 .restart-btn:hover {
     background: black;
     color: white;
+    margin: 10px;
 
 }
 
@@ -71,6 +72,13 @@ font-size: large;
     border: 5px solid black
 }
 
+.choice:hover {
+    cursor: pointer;
+}
+
 .result {
-    font-size: 20px;
+    font-size: 22.5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
 }
