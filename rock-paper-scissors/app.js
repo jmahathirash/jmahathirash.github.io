@@ -56,10 +56,12 @@ function getWinner(p, c) {
 function showWinner(win, compChoice) {
     if(win === 'player') {
         scoreboard.player++;
-        result.innerHTML = `Computer chose ${compChoice}. You Win!`;
+        result.innerHTML = `Computer chose The ${compChoice}. You Win!`;
     } else if(win === 'computer') {
         scoreboard.computer++;
-        result.innerHTML = `Computer chose ${compChoice}. You Lose!`;
+        result.innerHTML = `Computer chose The ${compChoice}. You Lose!`;
+    } else {
+        result.innerHTML = `Computer also chose The ${compChoice}. It's a Draw!`;
     }
 
     score.innerHTML = `
