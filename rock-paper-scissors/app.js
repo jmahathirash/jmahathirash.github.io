@@ -1,9 +1,6 @@
 const score = document.getElementById('score');
 const result = document.querySelector('.result > p');
 const restart = document.getElementById('restart');
-const rockDiv = document.getElementById("rock");
-const paperDiv = document.getElementById("paper");
-const scissorsDiv = document.getElementById("scissors");
 const scoreboard = {
     player: 0,
     computer: 0
@@ -68,20 +65,30 @@ function showWinner(win, compChoice) {
         <p>Player: ${scoreboard.player}</p>
         <p>Computer: ${scoreboard.computer}</p>
         `;
-}
+};
     
 
 function main() {
-    paperDiv.addEventListener('click', function() {
+    $('#paper').click(function() {
         play("paper");
     })
     
-    rockDiv.addEventListener('click', function() {
+    $('#rock').click(function() {
         play("rock");
     })
     
-    scissorsDiv.addEventListener('click', function() {
+    $('#scissors').click(function() {
         play("scissors");
     })
 };
 main();
+
+function restartGame() {
+    scoreboard.player = 0;
+    scoreboard.computer = 0;
+    score.innerHTML = `
+    <p>Player: 0</p>
+    <p>Computer: 0</p>`
+}
+
+restart.addEventListener('click', restartGame);

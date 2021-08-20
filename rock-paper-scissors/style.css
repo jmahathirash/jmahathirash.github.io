@@ -32,6 +32,8 @@ padding: 6px ;
 display: grid;
 grid-template-columns:repeat(2, 1fr) ;
 font-size: large;
+color: #7d5fff;
+background: black
 }
 
 .container {
