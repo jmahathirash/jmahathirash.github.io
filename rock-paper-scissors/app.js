@@ -1,6 +1,5 @@
 const score = document.getElementById('score');
 const result = document.querySelector('.result > p');
-const restart = document.getElementById('restart');
 const scoreboard = {
     player: 0,
     computer: 0
@@ -15,13 +14,6 @@ function getCompChoice() {
     } else {
         return 'scissors'
     }
-}
-
-function play(userChoice) {
-    const compChoice = getCompChoice();
-    const win = getWinner(userChoice, compChoice);
-
-    showWinner(win, compChoice)
 }
 
 function getWinner(p, c) {
@@ -67,6 +59,12 @@ function showWinner(win, compChoice) {
         `;
 };
     
+function play(userChoice) {
+    const compChoice = getCompChoice();
+    const win = getWinner(userChoice, compChoice);
+
+    showWinner(win, compChoice)
+}
 
 function main() {
     $('#paper').click(function() {
@@ -91,4 +89,4 @@ function restartGame() {
     <p>Computer: 0</p>`
 }
 
-restart.addEventListener('click', restartGame);
+$('#restart').click(restartGame)
