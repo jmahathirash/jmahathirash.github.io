@@ -87,6 +87,7 @@ function restartGame() {
     score.innerHTML = `
     <p>Player: 0</p>
     <p>Computer: 0</p>`
+    result.innerHTML = `Let's see which Dwayne Johnson the computer chooses!`
 }
 
 $('#restart').click(restartGame)
